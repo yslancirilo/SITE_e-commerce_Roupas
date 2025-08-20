@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.Inicial {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(75, 30, 43, 1);
+  
+  position: relative;
+}
+
+#Top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#brazil{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+#sale {
+  color: white;
+  font-size: 15px;  
+  cursor: pointer;
+}
+
+#country {
+ 
+  color: white;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#world{
+  width: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#iconsNav{
+  width: 20px;
+  cursor: pointer;
+}
+
+#iconsNavS{
+  width: 25px;
+  cursor: pointer;
+}
+
+#iconsNavCompra{
+  width: 25px;
+  cursor: pointer;
+}
+
+
+.nav {
+  width: 100%;
+  height: 8vh;
+  background-color: transparent; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute; 
+  top: 8vh;
+  left: 0;
+  z-index: 10;            
+}
+
+.nav:hover {
+  background-color: white;
+  transition: 0.8s;
+}
+
+.nav:hover > #Name {
+  color: rgba(75, 30, 43, 1);
+}
+
+.nav:hover > #navPags {
+  color: rgba(75, 30, 43, 1);
+}
+
+#navPags > li:hover  {
+  text-decoration: underline;
+}
+
+#link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav:hover #link{
+  color: rgba(75, 30, 43, 1);
+}
+
+#Name {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#navPags {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+
+
+.ColectionWin {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(IMGinverno.png);
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+
+
+
+.Colection1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#TxtClt1 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+  
+}
+
+#TxtClt2 {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.coleList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coleList li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: rgba(75, 30, 43, 1);
+  font-style: italic;
+  background-color: white;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.coleList li a:hover {
+  background-color: transparent;
+  color: white;
+  font-style: normal;
+}
+
+
+.veSobre{
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.veSobre:hover{
+    text-decoration: underline;
+}
+
+.ColectionSpri {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(IMGprimavera.png);
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.Colection2 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+
+#TxtClt3 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+  
+}
+
+#TxtClt4 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ComAg{
+     color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.ComAg:hover{
+    text-decoration: underline;
+}
+
+.ColectionClassMode {
+  height: 100vh;
+  width: 49.9%;
+  background-image: url(IMGclassicosModernos.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.ColectionNewpotLegacy {
+  height: 100vh;
+  width: 49.9%;
+  background-image: url(IMGnewport.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.ColectionEternalThread {
+  height: 100vh;
+  width: 100%;
+  background-image: url(IMGtheEternalThread.png);
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  padding-bottom: 2%;
+  margin-bottom: 5px ;
+}
+
+.ColectionOutono25{
+  height: 100vh;
+  width: 49.9%;
+  background-image: url(IMGoutono2025.png);
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.ColectionEstilosVerao{
+  height: 100vh;
+  width: 49.9%;
+  background-image: url(IMGEstilosdeVerão.png);
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+
+#colecoes{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px ;
+}
+
+#colecoes2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px ;
+}
+
+.Colection3 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+
+}
+
+.Colection4 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+
+}
+
+.Colection5 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+
+
+}
+
+.Colection6 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+
+
+}
+
+.Colection7 {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+
+
+}
+
+
+
+#TxtClt5 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+}
+
+#TxtClt6 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#TxtClt7 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+}
+
+#TxtClt8 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#TxtClt9 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+}
+
+#TxtClt10 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#TxtClt11 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+}
+
+#TxtClt12 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#TxtClt13 {
+  font-size: 36px;
+  color: white;
+  font-weight: 500;
+}
+
+#TxtClt14 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+
+
+.ComAg2{
+color: white;
+font-size: 12px;
+margin-top: 20px;
+opacity: 0.8;
+cursor: pointer;
+}
+.ComAg2:hover{
+ text-decoration: underline;
+}
+
+
+.user-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.user-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  color: rgba(75, 30, 43, 1);
+  cursor: pointer;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(75, 30, 43, 0.1);
+}
+
+
+
+#boxItens{
+  width: 100%;
+  height: 80%;
+  border: solid gray 1px;
+}
+
+.fotter {
+  width: 100%;
+  background-color: #eeeeeeb2;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px; 
+  flex-wrap: wrap; 
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-left p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.footer-input {
+  display: flex;
+  max-width: 300px;
+}
+
+.footer-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+
+  font-size: 12px;
+}
+
+.footer-input button {
+  background-color: rgba(75, 30, 43, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #222;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}

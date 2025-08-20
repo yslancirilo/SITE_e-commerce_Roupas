@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.Inicial {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(75, 30, 43, 1);
+
+  position: relative;
+}
+
+#Top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#brazil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+#sale {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#country {
+
+  color: white;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#world {
+  width: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#iconsNav {
+  width: 20px;
+  cursor: pointer;
+}
+
+#iconsNavS {
+  width: 25px;
+  cursor: pointer;
+}
+
+#iconsNavCompra {
+  width: 25px;
+  cursor: pointer;
+}
+
+
+.nav {
+  width: 100%;
+  height: 8vh;
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  z-index: 10;
+
+}
+
+.nav:hover {
+  background-color: white;
+  transition: 0.8s;
+}
+
+.nav:hover>#Name {
+  color: rgba(75, 30, 43, 1);
+}
+
+.nav:hover>#navPags {
+  color: rgba(75, 30, 43, 1);
+}
+
+#navPags>li:hover {
+  text-decoration: underline;
+}
+
+#link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav:hover #link{
+  color: rgba(75, 30, 43, 1);
+}
+
+
+.user-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.user-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  color: rgba(75, 30, 43, 1);
+  cursor: pointer;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(75, 30, 43, 0.1);
+}
+
+
+
+#Name {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#navPags {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+
+
+.aboutUS {
+  width: 100%;
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#txtUs {
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+}
+
+#imgUs {
+  width: 90vw;
+  max-width: 1200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+#Who {
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 2%;
+}
+
+#NameWho {
+  font-size: 64px;
+  font-weight: lighter;
+  margin-top: 1%;
+}
+
+#descWho {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#txtWho {
+  font-size: 20px;
+  font-weight: 400;
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.traco-rosa {
+  display: flex;
+  width: 90%;
+  height: 6px;
+  background-color: #D9A6A6;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+#txtMemo {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+#txt1Mem {
+  width: 65%;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#txt2Mem {
+  width: 65%;
+  font-size: 15px;
+
+}
+
+#ceoName {
+  font-size: 15px;
+  font-weight: initial;
+}
+
+#ceoYears {
+  font-size: 13px;
+  font-weight: initial;
+}
+
+#imgCeo {
+  width: 100%;
+  
+}
+
+.txtCeo{
+width: 30%;
+
+
+}
+
+#imgceoDIV{
+  width: 40%;
+}
+
+#divzao{
+  width: 100%;
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosSlogan{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+#imgslogan{
+  width: 100%;
+}
+
+#imgSlogandiv{
+  width: 25%;
+}
+
+#txtSlo1{
+  font-size: 40px;
+  font-weight: initial;
+}
+
+#txtSlo2{
+  font-size: 20px;
+  font-weight: initial;
+}
+
+.txtManifes{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+#txtFest{
+  width: 30%;
+}
+
+#txt1Mani{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+#txt2Mani{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#imgManiDIV{
+  width: 20%;
+}
+
+#imgMani{
+  width: 100%;
+  
+}
+
+
+
+.fotter {
+  width: 100%;
+  background-color: #d4d4d4b2;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-left p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.footer-input {
+  display: flex;
+  max-width: 300px;
+}
+
+.footer-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+
+  font-size: 12px;
+}
+
+.footer-input button {
+  background-color: rgba(75, 30, 43, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #222;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
+
+#boxItens {
+  width: 100%;
+  height: 80%;
+  border: solid gray 1px;
+}
+
+/* Media Queries para Telas Médias */
+@media screen and (max-width: 1024px) {
+  #navPags {
+    gap: 15px;
+    font-size: 14px;
+  }
+  
+  #Name {
+    font-size: 24px;
+  }
+  
+  #txtUs {
+    font-size: 36px;
+  }
+  
+  #NameWho {
+    font-size: 48px;
+  }
+  
+  #txtWho {
+    width: 85%;
+    font-size: 18px;
+  }
+  
+  #txtMemo {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
+  #imgceoDIV {
+    width: 60%;
+  }
+  
+  .txtCeo {
+    width: 80%;
+  }
+  
+  .nosSlogan {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
+  #imgSlogandiv {
+    width: 50%;
+  }
+  
+  #txtSlo1 {
+    font-size: 32px;
+  }
+  
+  .txtManifes {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  
+  #txtFest {
+    width: 80%;
+  }
+  
+  #txt1Mani {
+    font-size: 32px;
+  }
+  
+  #imgManiDIV {
+    width: 50%;
+  }
+  
+  .footer-container {
+    gap: 40px;
+  }
+}
+
